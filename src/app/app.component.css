@@ -1,0 +1,15 @@
+.top-menu {
+    background: #91d219;
+    padding: 10px 10px;
+}
+
+.logo {
+  max-height: 55px;
+  float: left;
+  padding-right: 55px;
+}
+
+.users {
+  max-width: 400px;
+  margin: 50px auto;
+}

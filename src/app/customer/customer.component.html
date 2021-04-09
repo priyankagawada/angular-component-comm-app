@@ -1,0 +1,31 @@
+<div>
+    <h1>Customer Details</h1>
+</div>
+
+<!-- child component -->
+<!--<app-customer-details 
+        [id]="customer1.id" 
+        [name]="customer1.name">
+</app-customer-details>
+
+<app-customer-details 
+        [id]="customer2.id" 
+        [name]="customer2.name">
+</app-customer-details>
+
+<app-customer-details 
+        [id]="customer3.id" 
+        [name]="customer3.name">
+</app-customer-details>
+-->
+
+<div *ngFor="let customer of customers">
+
+<app-customer-details [id]="customer.id"
+                      [name]="customer.name"> 
+</app-customer-details>      
+</div>
+
+
+
+

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CUSTOMERS } from 'src/dt-data';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'parent-child-demo-app';
+
+  
 }
