@@ -1,7 +1,7 @@
-<p>customer-details works!</p>
+<!--<p>customer-details works!</p>-->
 
 <!-- card layout -->
-<ul>
+<!-- <ul>
     <li>
         {{ customerId }}
     </li>
@@ -10,3 +10,50 @@
     </li>
 </ul>
 <button class="btn btn-primary"> View More Details</button>
+-->
+
+<div class="card card-primary" >
+
+    <div class="card-header" style="background-color: rgb(0, 255, 179);">
+        <img [src]="customer.iconUrl" width="200px" height="200px" />
+    </div>
+
+    <div class="card-body">
+        <table class="table table-borderless">
+            <tr>
+                <th>Customer ID</th>
+                <td> # {{ customer.id }}</td>
+            </tr>
+
+            <tr>
+                <th> Customer Name </th>
+                <td>
+                    <h5> {{ customer.name }} </h5>
+                </td>
+            </tr>
+
+            <tr>
+                <th> Customer Location </th>
+                <td>
+                    <h5> {{ customer?.location }} </h5>
+                </td>
+            </tr>
+
+            <tr>
+                <th>Orders</th>
+                <td>
+                    <h5> {{ customer.orders }} </h5>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="card-footer">
+        <button class="btn btn-info" (click)="onEditClicked()"
+        data-toggle="modal" data-target="#editModal">
+            EDIT
+        </button>
+       
+    </div>
+
+</div>

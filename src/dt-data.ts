@@ -30,7 +30,7 @@ export const CUSTOMERS : Customer[]  = [
         id: 4,
         name: "Jesse Smith",
         location: "Seatle Washington",
-        iconUrl: 'assets/images/customer4.png',
+        iconUrl: 'assets/images/download.jfif',
         orders: 10,
         category: 'Fashion Accessories'
     },
@@ -46,7 +46,7 @@ export const CUSTOMERS : Customer[]  = [
         id: 6,
         name: "Gene Thomas",
         location: "Chandler, Arizona",
-        iconUrl: 'assets/images/customer6.png',
+        iconUrl: 'assets/images/download.jfif',
         orders: 8,
         category: 'Fashion Accessories'
     },
