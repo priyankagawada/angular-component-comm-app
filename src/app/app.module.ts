@@ -9,6 +9,7 @@ import { DemoModalComponent } from './demo-modal/demo-modal.component';
 import { AComponent } from './a/a.component';
 import { BComponent } from './b/b.component';
 import { IncrementService } from './services/increment.service';
+import { DashboardModule } from './dashboard/dashboard.module';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { IncrementService } from './services/increment.service';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    DashboardModule
   ],
   providers: [IncrementService], // information for injector service
   bootstrap: [AppComponent]
